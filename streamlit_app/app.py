@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Quando fizermos o deploy, alteramos a variável no ambiente. Localmente usa o localhost.
-API_URL = os.getenv("API_URL", "http://127.0.0.1:8000")
+API_URL = os.getenv("https://fastapiprojeto.onrender.com/", "http://127.0.0.1:8000")
 
 st.set_page_config(page_title="CRUD Itens", layout="centered")
 st.title("📦 Gestão de Stock - Dashboard CRUD")
